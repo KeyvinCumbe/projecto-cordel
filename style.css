@@ -1,0 +1,96 @@
+@charset "UTF_8";
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --font1:Verdana, Geneva, Tahoma, sans-serif;
+    --font2:"Passion One", sans-serif;
+    --font3:"Sriracha", cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    min-height: 100vh; /*tamanho mínimo da viewport*/
+    background-color: darkgray;
+    font-family: var(--font1);
+}
+
+
+header{
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size:3vw;
+}
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;/*fica capitalized*/
+    font-family: var(--font2);
+    
+}
+header > p {
+    padding-bottom:50px;
+}
+header a , footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+header > a:hover, footer > a:hover {
+    text-decoration: underline;
+}
+
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em; /*altura de linha*/
+    padding-left: 50px;
+    font-family: var(--font3);
+    font-size:2vw;
+}
+
+section > p{
+    padding-bottom: 1em;
+}
+section.normal {
+    background-color: white;
+    color:black
+}
+section.imagem{
+    background-color: rgb(24, 26, 26);
+    color: white;
+    box-shadow:inset 6px  6px 13px 0px rgb(54, 50, 50) /*Inset é para dentro*/
+}
+section.imagem > p {
+    display: inline-block; /*Onde termina as escritas ele vai terminar o background-color*/
+    background-color: rgba(0, 0, 0, 0.247);
+    text-shadow: .5px .5px;
+    background-size: cover;
+}
+
+section#img01 {
+    background-image: url('./imagens/background001.jpg');
+    background-position: right center;
+
+    background-attachment: fixed;  /*Fixa a imagem a cria o efeito paralax*/
+}
+section#img02{
+    background-image: url('./imagens/background002.jpg');
+
+    background-attachment: fixed;  /*Fixa a imagem a cria o efeito paralax*/
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align:  center;
+    padding: 5px;
+}
